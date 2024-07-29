@@ -1,0 +1,32 @@
+@include mobile{
+  .footer > .container{
+    max-width: 100%;
+  }
+}
+.footer{
+ & .content{
+    border-bottom: 1px solid #fff;
+  }
+} 
+.social{
+  margin-left: auto;
+  & img{
+    width: 48px;
+    @include pad{
+      width: 40px;
+    }
+    @include pad-small{
+      width: 24px;
+    }
+  }
+}
+.privacy{
+  margin-left: auto;
+  @include pad-small{
+    margin-left: 0;
+  }
+}
+.buyBtn{
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
