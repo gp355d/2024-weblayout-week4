@@ -1,0 +1,129 @@
+//category..html
+.categoryList{
+  ul{
+    @include pad{
+      margin-right: -12px;
+      margin-left: -12px;
+    }
+  }
+  li{
+    width: 33.333%;
+    &.active{
+      border-bottom: 8px solid #AA0601;
+    }
+    a{
+      font-size: 32px;
+      padding: 24px 0;
+      color: #000;
+      padding: 24px 0 16px 0;
+      @include pad{
+        padding: 16px 0 8px 0;
+        font-size: 24px;
+      }
+      @include mobile{
+        font-size: 16px;
+      }
+    }
+  }
+}
+.borderStyle{
+  border: 1px solid #DCDCDC;
+}
+.headerImg{
+  margin-right: -12px;
+  margin-left: -12px;
+  li{
+    width: 50%;
+  }
+  img{
+    @include pad{
+      width: 100%;
+    }
+  }
+}
+@include mobile{
+  .product > .container{
+    max-width: 100%;
+  }
+}
+@include pad{
+  .categoryList > .container {
+    max-width: 100%;
+  }
+}
+
+.headerSection > .container{
+  max-width: 100%;
+  @include pad{
+    max-width: 100%;
+  }
+}
+.product{
+  .title{
+    font-size: 42px;
+    @include pad-small{
+      font-size: 24px;
+    }
+  }
+  .chineseTite{
+    font-size: 32px;
+    @include pad-small{
+      font-size: 24px;
+    }
+  }
+} 
+.productList{
+  margin-right: -12px;
+  margin-left: -12px;
+  li{
+    width: 25%;
+    padding-right: 12px;
+    padding-left: 12px;
+    @include pad{
+      width: 50%;
+    }
+    @include mobile{
+      width: 100%;
+    }
+  }
+}
+.info{
+  font-size: 24px;
+}
+.price{
+  margin-left: auto;
+}
+.colorStyle span{
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+}
+.colorStyle1{
+  background-color: #5F3E2D;
+}
+.colorStyle2{
+  background-color: #B75929;
+}
+.pg{
+  a{
+    padding: 12px 16px;
+    color: #555555;
+    outline: 1px solid #000;
+    @include pad{
+      padding: 12px 15px;
+    }
+    &:hover{
+      background-color: #000;
+      color: #fff;
+    }
+  }
+}
+.next{
+  background-color: #F2F2F2;
+}
+.pre.pre,.next.next{
+  padding: 11px 12px;
+  @include mobile{
+    padding: 11px 13px 11px 14px;
+  }
+}
