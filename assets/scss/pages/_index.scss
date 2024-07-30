@@ -105,3 +105,48 @@
     margin-top: auto;color: #707070;
   }
 }
+//contactMe區塊
+.contactMe{
+  .content{
+    width: 60%;
+    margin: 0 auto;
+    @include pad{
+        width: 80%;
+    }
+    @include pad-small{
+        width: 100%;
+    }
+  }
+}
+.text {
+  input[type="text"],
+  & textarea{
+    width: 100%;
+    border: 1px solid #000;
+  }
+  & textarea{
+    padding: 6px 12px;
+    height: 136px;
+  }
+}
+.inputStyle{
+  padding: 6px 12px ;
+}
+.checkbox{
+  width: 24px;
+  height: 24px;
+  @include mobile {
+    align-self: flex-start;
+    margin: 0 4px 0 0;
+  }
+}
+.send{
+  background-color: $primaryColor;
+  width: 60%;
+  margin: 0 auto;
+  border: 0;
+  cursor: pointer;
+  &:hover{
+    background-color: $secondaryColor;
+  }
+}
