@@ -1,0 +1,92 @@
+@include pad{
+  .location > .container{
+    max-width: 720px;
+  }
+}
+.location{
+  padding-top: 96px;
+  padding-bottom: 80px;
+  @include pad{
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  @include pad-small{
+    padding-top: 40px;
+    padding-bottom: 64px;
+  }
+}
+.location{
+  .title{
+    font-size: 48px;
+    padding-left: 12px;
+    border-left: 8px solid #9F1213;
+    @include mobile{
+      font-size: 24px;
+    }
+  }
+}
+.choseItem{
+  width: 32%;
+  @include pad{
+    width: 60%;
+  
+  }
+  @include mobile{
+    width: 100%;
+  }
+}
+.choseItem{
+  label{
+    font-size: 24px;
+    margin-right: 16px;
+    @include mobile{
+      margin-right: 8px;
+      font-size: 16px;
+    }
+  }
+  select{
+    width: 100%;
+    font-size: 18px;
+    padding: 6px 12px;
+  }
+} 
+.locationList{
+  margin-right: -12px;
+  margin-left: -12px;
+  a{
+    color: #000;
+  }
+}
+.locationList{
+  > li{
+    width: 33.333%;
+    padding-right: 12px;
+    padding-left: 12px;
+    @include pad{
+      width: 50%;
+    }
+    @include pad-small{
+      width: 100%;
+    }
+  }
+} 
+.locationList-content{
+  .title{
+    font-size: 24px;
+    padding: 8px 24px 8px 24px;
+    border: 1px solid #00000020;
+  }
+  div{
+    padding: 24px;
+    border: 1px solid #00000020;
+  }
+}
+.infoList p{
+  font-size: 20px;
+}
+.detail{
+  font-size: 19px;
+  background-color: #000;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
