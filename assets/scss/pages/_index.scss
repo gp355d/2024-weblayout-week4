@@ -37,3 +37,23 @@
     margin-bottom: 16px;
   }
 }
+//class區塊
+.classic{
+  ul{
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  li{
+    width: 33.3333%;
+    padding-right: 12px;
+    padding-left: 12px;
+    @include pad{
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @include mobile{
+      width: 100%;
+    }
+  }
+} 
