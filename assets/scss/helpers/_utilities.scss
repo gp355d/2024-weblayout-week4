@@ -41,11 +41,11 @@
 .text-right{
   text-align: right;
 }
+.text-secondary{
+  color: $secondaryColor ;
+}
 .text-primary{
   color: $primaryColor;
-}
-.text-secondary{
-  color: $secondaryColor;
 }
 .text-color{
   color: #fff;
@@ -63,7 +63,7 @@
   height: 100%;
 }
 .bg-primary{
-  background-color: $secondaryColor;
+  background-color: $primaryColor;
 }
 .bg-secondary{
   background-color: #FBF2F2;
