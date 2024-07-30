@@ -326,7 +326,9 @@ $spacer-types: () !default;
     padding-right: $spacer;
   }
 }
-
+.mb-31{
+  margin-bottom: 124px;
+}
 @include pad {
   @each $name, $spacer in $spacer-types {
     .mt-md-#{$name} {
