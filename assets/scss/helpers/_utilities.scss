@@ -411,12 +411,15 @@ $spacer-types: () !default;
 $fontSize-types: (
   1: 14px,
   2: 16px,
-  3: 20px,
-  4: 24px,
-  5: 36px,
-  6: 48px,
-  7: 64px
+  3: 18px,
+  4: 20px,
+  5: 24px,
+  6: 36px,
+  7: 48px,
+  8: 64px
 ) !default;
+//18px
+//32px
 
 @each $val, $size in $fontSize-types {
   .fz-#{$val} {
