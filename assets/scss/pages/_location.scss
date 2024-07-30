@@ -90,3 +90,46 @@
   padding-top: 16px;
   padding-bottom: 16px;
 }
+//locationInfo.html
+.mapImg{
+  width: 58.3%;
+  @include pad{
+    width: 100%;
+  }
+  img{
+   height: 100%;
+   object-fit: cover;
+ }
+}
+.infoList{
+  padding: 24px;
+  border: 1px solid #00000020;
+}
+
+.locationInto{
+  @include pad{
+    flex-wrap: wrap;
+  }
+  .content{
+    width: 41.66%;
+    margin-right: 24px;
+    @include pad{
+      display: flex;
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 24px;
+    }
+    @include pad-small{
+      display: block;
+    }
+    >img{
+      @include pad{
+        width: 50%;
+        margin-right: 24px;
+      }
+      @include pad-small{
+        width: 100%;
+      }
+    }
+  }
+} 
