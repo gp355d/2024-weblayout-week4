@@ -1,3 +1,4 @@
+//banner區塊
 .banner > .container{
   max-width: 100%;
 }
@@ -11,5 +12,28 @@
   }
   @include mobile{
     height: 396px;
+  }
+}
+//feature區塊
+.feature{
+  ul{
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  li{
+    width: 25%;
+    padding-right: 12px;
+    padding-left: 12px;
+    @include pad{
+      width: 50%;
+    }
+    @include mobile{
+      width: 100%;
+    }
+  }
+  img{
+    width: 100px;
+    margin: 0 auto;
+    margin-bottom: 16px;
   }
 }
