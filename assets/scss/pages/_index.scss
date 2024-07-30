@@ -1,3 +1,15 @@
-.index-title {
-  font-size: 100px;
+.banner > .container{
+  max-width: 100%;
+}
+.banner{
+  background-image: url(../images/home-header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 787px;
+  @include pad{
+    background-image: url(../images/home-header-sm.png);
+  }
+  @include mobile{
+    height: 396px;
+  }
 }

@@ -433,9 +433,16 @@ $fontSize-types: (
     }
   }
 }
-@include mobile {
+@include pad-small {
   @each $val, $size in $fontSize-types {
     .fz-sm-#{$val} {
+      font-size: $size;
+    }
+  }
+}
+@include mobile {
+  @each $val, $size in $fontSize-types {
+    .fz-xs-#{$val} {
       font-size: $size;
     }
   }
