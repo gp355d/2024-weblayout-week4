@@ -56,4 +56,25 @@
       width: 100%;
     }
   }
-} 
+}
+//jointDesign區塊
+.jointDesign{
+  background-image: url(../images/index-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include pad{
+    background-image: url(../images/index-bg-sm.png);
+  }
+  @include mobile{
+    background-image: url(../images/index-bg-md.png);
+  }
+  li{
+    width: 50%;
+    @include pad{
+      width: 100%;
+    }
+  }
+  .title{
+    background-color: #fff;
+  } 
+}
