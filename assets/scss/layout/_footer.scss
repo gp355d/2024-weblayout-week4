@@ -20,8 +20,28 @@
     }
   }
 }
+.contactUs{
+  span{
+    font-size: 48px;
+    @include pad-small{
+      font-size: 24px;
+    }
+  }
+  a{
+    font-size: 36px;
+    @include pad-small{
+      font-size: 16px;
+    }
+  }
+}
 .privacy{
   margin-left: auto;
+  a{
+    font-size: 14px;
+    @include pad-small{
+      font-size: 16px;
+    }
+  }
   @include pad-small{
     margin-left: 0;
   }

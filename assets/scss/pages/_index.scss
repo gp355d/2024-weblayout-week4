@@ -13,9 +13,30 @@
   @include mobile{
     height: 396px;
   }
+  h1{
+    font-size: 48px;
+    @include mobile{
+      font-size: 14px;
+    }
+  }
+  h2{
+    font-size: 64px;
+    @include mobile{
+      font-size: 24px;
+    }
+  }
+  a{
+    font-size: 20px;
+  }
 }
 //feature區塊
 .feature{
+  h3{
+    font-size: 48px;
+    @include pad-small{
+      font-size: 24px;
+    }
+  }
   ul{
     margin-left: -12px;
     margin-right: -12px;
@@ -36,9 +57,18 @@
     margin: 0 auto;
     margin-bottom: 16px;
   }
+  h4{
+    font-size: 24px;
+  }
 }
 //class區塊
 .classic{
+  h3{
+    font-size: 48px;
+    @include pad-small{
+      font-size: 24px;
+    }
+  }
   ul{
     margin-left: -12px;
     margin-right: -12px;
@@ -54,6 +84,11 @@
     }
     @include mobile{
       width: 100%;
+    }
+  }
+  .content{
+    h3{
+      font-size: 48px;
     }
   }
 }
@@ -76,11 +111,24 @@
   }
   .title{
     background-color: #fff;
-  } 
+    font-size: 48px;
+  }
+  h3{
+    font-size: 48px;
+    @include pad-small{
+      font-size: 24px;
+    }
+  }
 }
 //
 /*customerRecomemd區塊*/
 .customerRecommend{
+  h3{
+    font-size: 48px;
+    @include pad-small{
+      font-size: 24px;
+    }
+  }
   ul{
     margin-left: -12px;
     margin-right: -12px;
@@ -96,6 +144,9 @@
       width: 100%;
     }
   }
+  span{
+    font-size: 14px;
+  }
 }
 .card{
   box-shadow: 0px 2px 6px #00000029;
@@ -107,9 +158,24 @@
 }
 //contactMe區塊
 .contactMe{
+  h3{
+    font-size: 48px;
+    @include pad-small{
+      font-size: 24px;
+    }
+  }
   .content{
     width: 60%;
     margin: 0 auto;
+    p{
+      font-size: 20px;
+      @include pad-small{
+        font-size: 16px;
+      }
+    }
+    .send{
+      font-size: 16px;
+    }
     @include pad{
         width: 80%;
     }
