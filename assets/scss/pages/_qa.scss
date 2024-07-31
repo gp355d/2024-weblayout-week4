@@ -1,0 +1,24 @@
+//qa頁面
+@include mobile{
+  .qa > .container{
+    max-width: 100%;
+  }
+}
+.qa{
+  .title{
+    font-size: 48px;
+    padding-left: 12px;
+    border-left: 8px solid #9F1213;
+    @include mobile{
+      font-size: 24px;
+    }
+  }
+  .subTitle{
+    font-size: 24px;
+  }
+}
+.qaList{
+  h4{
+    font-size: 20px;
+  }
+}
