@@ -1,6 +1,8 @@
 //banner區塊
-.banner > .container{
-  max-width: 100%;
+@include mobile{
+  .banner > .container{
+    max-width: 100%;
+  }
 }
 .banner{
   background-image: url(../images/home-header.png);
