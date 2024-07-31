@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>類別2</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <section class="categoryList">
+      <div class="container">
+        <ul class="d-flex text-center">
+          <li class="borderStyle">
+            <a class="font-weight-500" href="./category.html">OPTICAL</a>
+          </li>
+          <li class="borderStyle active">
+            <a class="font-weight-500" href="#">SUNGLASSES</a>
+          </li>
+          <li class="borderStyle">
+            <a class="font-weight-500" href="#">FUNCTIONAL</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <header class="headerSection">
+      <div class="container">
+        <ul class="d-flex headerImg">
+          <li>
+            <picture>
+              <source srcset="../assets/images/product-header-sm-3.png" media="(max-width: 992px)">
+              <img src="../assets/images/product-header-3.png" alt="product-header-3">
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <source srcset="../assets/images/product-header-sm-4.png" media="(max-width: 992px)">
+              <img src="../assets/images/product-header-4.png" alt="product-header-4">
+            </picture>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section class="product pt-20 pb-20 pt-sm-10 pb-sm-16">
+      <div class="container">
+        <h2 class="title text-center">2020 NEW COLLECTION</h2>
+        <h2 class="chineseTite text-center mb-8 mb-md-6">賽璐珞鈦金屬混合鏡框</h2>
+        <ul class="List d-flex flex-wrap mb-20 mb-xs-16">
+          <li class="mb-20 mb-md-10 mb-xs-6">
+            <div>
+              <img src="../assets/images/product-7.png" alt="product-7">
+              <div class="d-flex info">
+                <span class="name">BJ41600S</span>
+                <span class="price text-primary font-weight-500">NTD3,490</span>
+              </div>
+              <div class="colorStyle d-flex">
+                <span class="d-block mr-2 colorStyle1"></span>
+                <span class="d-block colorStyle2"></span>
+              </div>
+            </div>
+          </li>
+          <li class="mb-20 mb-md-10 mb-xs-6">
+            <div>
+              <img src="../assets/images/product-8.png" alt="product-8">
+              <div class="d-flex info">
+                <span class="name">BJ41600S</span>
+                <span class="price text-primary font-weight-500">NTD3,490</span>
+              </div>
+              <div class="colorStyle d-flex">
+                <span class="d-block mr-2 colorStyle1"></span>
+                <span class="d-block colorStyle2"></span>
+              </div>
+            </div>
+          </li>
+          <li class="mb-20 mb-md-10 mb-xs-6">
+            <div>
+              <img src="../assets/images/product-9.png" alt="product-9">
+              <div class="d-flex info">
+                <span class="name">BJ41600S</span>
+                <span class="price text-primary font-weight-500">NTD3,490</span>
+              </div>
+              <div class="colorStyle d-flex">
+                <span class="d-block mr-2 colorStyle1"></span>
+                <span class="d-block colorStyle2"></span>
+              </div>
+            </div>
+          </li>
+          <li class="mb-md-10 mb-xs-6">
+            <div>
+              <img src="../assets/images/product-10.png" alt="product-10">
+              <div class="d-flex info">
+                <span class="name">BJ41600S</span>
+                <span class="price text-primary font-weight-500">NTD3,490</span>
+              </div>
+              <div class="colorStyle d-flex">
+                <span class="d-block mr-2 colorStyle1"></span>
+                <span class="d-block colorStyle2"></span>
+              </div>
+            </div>
+          </li>
+          <li class="mb-xs-6">
+            <div>
+              <img src="../assets/images/product-11.png" alt="product-11">
+              <div class="d-flex info">
+                <span class="name">BJ41600S</span>
+                <span class="price text-primary font-weight-500">NTD3,490</span>
+              </div>
+              <div class="colorStyle d-flex">
+                <span class="d-block mr-2 colorStyle1"></span>
+                <span class="d-block colorStyle2"></span>
+              </div>
+            </div>
+          </li>
+          <li class="">
+            <div>
+              <img src="../assets/images/product-12.png" alt="product-12">
+              <div class="d-flex info">
+                <span class="name">BJ41600S</span>
+                <span class="price text-primary font-weight-500">NTD3,490</span>
+              </div>
+              <div class="colorStyle d-flex">
+                <span class="d-block mr-2 colorStyle1"></span>
+                <span class="d-block colorStyle2"></span>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="d-flex justify-content-center">
+          <ul class="d-flex pg">
+            <li>
+              <a class="pre h-100" href="#">上一頁</a>
+            </li>
+            <li>
+              <a class="h-100" href="#">1</a>
+            </li>
+            <li>
+              <a class="h-100" href="#">2</a>
+            </li>
+            <li>
+              <a class="h-100" href="#">3</a>
+            </li>
+            <li>
+              <a class="h-100" href="#">4</a>
+            </li>
+            <li>
+              <a class="h-100" href="#">5</a>
+            </li>
+            <li>
+              <a class="next h-100" href="#">下一頁</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

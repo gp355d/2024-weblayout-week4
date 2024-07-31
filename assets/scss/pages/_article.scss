@@ -1,0 +1,157 @@
+//article.html
+@include mobile{
+  .subMenu > .container{
+    max-width: 100%;
+  }
+}
+@include mobile{
+  .article > .container {
+    max-width: 100%;
+  }
+}
+.subContent{
+  margin-right: auto;
+}
+@include pad-small{
+  .subContent{
+    justify-content: space-between;
+  }
+}
+@include mobile{
+  .subContent{
+    width: 100%;
+  }
+}
+@include mobile{
+  .xx{
+    display: none;
+  }
+}
+.breadCrumbs{
+  a{
+    color: $color2;
+    &:after{
+      content: "/";
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    &.active{
+      color: $primaryColor;
+      &:after{
+        content: "";
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+  }
+} 
+.tags{
+  font-size: 24px;
+  @include mobile{
+    font-size: 16px;
+  }
+  span{
+    color: $primaryColor;
+    @include pad-small{
+      font-size: 16px;
+    }
+  }
+}
+.article{
+  .content{
+    width: 66%;
+    @include pad{
+      width: 75%;
+    }
+    @include mobile {
+      width: 100%;
+      margin-right: 0;
+    }
+    h2{
+      font-size: 48px;
+      @include pad-small{
+        font-size: 24px;
+      }
+    }
+    h3{
+      font-size: 24px;
+      @include pad-small{
+        font-size: 16px;
+      }
+    }
+  }
+}
+.article{
+  .relativeTags{
+    width: 33.333%;
+    color: $primaryColor;
+    .title{
+      font-size: 32px;
+      @include pad{
+        font-size: 16px;
+      }
+    }
+    @include pad{
+      width: 25%;
+    }
+    @include mobile{
+      display: none;
+    }
+    .title{
+      font-size: 32px;
+      @include pad{
+        font-size: 16px;
+      }
+    }
+  }
+}
+.hashtags{
+  font-size: 48px;
+} 
+.tagName{
+  font-size: 24px;
+  @include pad{
+    font-size: 16px;
+  }
+  a{
+    color: $primaryColor;
+  }
+}
+.articleInfo{
+  color: $color5;
+}
+.share {
+  width: 66%;
+  border-bottom: 1px solid $color6;
+  @include pad{
+    width: 100%;
+  }
+  img{
+    width: 24px;
+    height: 24px;
+  }
+}
+.content-page {
+  width: 66%;
+  @include pad{
+    width: 100%;
+  }
+}
+.bottom{
+  a.social{
+    vertical-align: bottom;
+  }
+}
+@include mobile{
+  .bottom {
+    display: none;
+  }
+}
+.content-page{
+  & li:first-child{
+    margin-right: auto
+  }
+  a{
+    color: $color2;;
+  }
+}

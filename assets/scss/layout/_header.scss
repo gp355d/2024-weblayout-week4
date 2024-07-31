@@ -1,0 +1,19 @@
+.logo{
+  margin-right: auto;
+  & img{
+    width: 80px;
+  }
+}
+@include mobile{
+  .header > .container{
+    max-width: 100%;
+  }
+}
+.nav{
+  a{
+    font-size: 20px;
+    @include pad-small{
+      font-size: 16px;
+    }
+  }
+}

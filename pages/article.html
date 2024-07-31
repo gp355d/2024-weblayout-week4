@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <title>部落格文章詳細內容</title>
+</head>
+<body>
+  <%- include('./layout/header'); -%>
+  <nav class="subMenu">
+    <div class="container">
+      <div class="d-flex align-items-center">
+        <ul class="d-flex subContent">
+          <li class="mr-12 mr-xs-6">
+            <a class="text-color" href="#">最新消息</a>
+          </li>
+          <li class="mr-12 mr-xs-6">
+            <a class="text-color" href="#">特別企劃</a>
+          </li>
+          <li class="mr-12 mr-xs-6">
+            <a class="text-color" href="#">新品上市</a>
+          </li>
+          <li>
+            <a class="text-color" href="#">鏡框小知識</a>
+          </li>
+        </ul>
+        <a href="#">
+          <span class="text-color searchIcon d-block material-symbols-outlined">search</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <section class="article pb-20 pb-xs-16">
+    <div class="container">
+      <ul class="breadCrumbs d-flex mb-2">
+        <li>
+          <a href="#">首頁</a>
+        </li>
+        <li>
+          <a href="#">部落格</a>
+        </li>
+        <li>
+          <a href="#">特別企劃</a>
+        </li>
+        <li>
+          <a class="active" href="#">情人特別企劃</a>
+        </li>
+      </ul>
+      <div class="tags font-blod mb-2">
+        <span class="mr-4">#special</span>
+        <span>#event</span>
+      </div>
+
+      <div class="d-flex ">
+        <div class="content mr-6">
+          <h2 class="font-blod">情人特別企劃</h2>
+          <h3 class="font-blod mb-4 mb-md-6 mb-sm-4">2020 Valentine’s Special</h3>
+          <ul>
+            <li class="mb-10 mb-md-6 mb-xs-4">
+              <div>
+                <img class="mb-2 mb-md-6 mb-xs-2" src="../assets/images/blogpage-1.png" alt="blogpage-1">
+              </div>
+              <p class="articleInfo">一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。 本次拍攝的鏡框款式與 NEEDS CLASSIC 聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！</p>
+            </li>
+            <li class="mb-10 mb-md-6 mb-xs-4">
+              <div>
+                <img class="mb-2 mb-md-6 mb-xs-2" src="../assets/images/blogpage-2.png" alt="blogpage-2">
+              </div>
+              <p class="articleInfo">一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。 本次拍攝的鏡框款式與 NEEDS CLASSIC 聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！</p>
+            </li>
+            <li class="mb-10 mb-md-6 mb-xs-4">
+              <div>
+                <img class="mb-2 mb-md-6 mb-xs-2" src="../assets/images/blogpage-3.png" alt="blogpage-3">
+              </div>
+              <p class="articleInfo">一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。 本次拍攝的鏡框款式與 NEEDS CLASSIC 聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！</p>
+            </li>
+            <li class="mb-10 mb-xs-0">
+              <div>
+                <img class="mb-2 mb-md-6 mb-xs-2" src="../assets/images/blogpage-4.png" alt="blogpage-4">
+              </div>
+              <p class="articleInfo">2/14(五)-2/20(日)<br>
+                至本店單筆消費滿2980元, 就送情人節限定眼鏡盒1個<br> 
+                期間優惠還有~~持他牌鏡框更換鏡片<br> 
+                薄型非球面鏡片折300元<br> 
+                濾藍光鏡片折500元 快快帶上另一半<br> 
+                讓彼此每一次睜開眼，都被愛的視線包圍!</p>
+            </li>
+          </ul>
+        </div>
+        <div class="relativeTags font-blod">
+          <div class="d-flex align-items-center hashtags">
+            <span class="title mr-2 icon material-symbols-outlined">label</span>
+            <span class="title">TAGS</span>
+          </div>
+          <div class="tagName">
+            <a class="d-block-in font-blod mr-6" href="#">
+              <span>#special</span>
+            </a>
+            <a class="d-block-in font-blod" href="#">
+              <span>#sale</span>
+            </a>
+            <br>
+            <a class="d-block-in font-blod mr-6" href="#">
+              <span>#new_item</span>
+            </a>
+            <a class="d-block-in font-blod" href="#">
+              <span>#interview</span>
+            </a>
+            <br>
+            <a class="d-block-in font-blod mr-6" href="#">
+              <span>#trivia</span>
+            </a>
+            <a class="d-block-in font-blod" href="#">
+              <span>#news</span>
+            </a>
+            <br>
+            <a class="d-block-in font-blod" href="#">
+              <span>#event</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="share pb-4">
+          <span class="mr-4 d-block-in">Share</span>
+          <a class="mr-4 d-block-in social" href="#">
+            <img src="../assets/images/logo-facebook.png" alt="fb">
+          </a>
+          <a class="d-block-in social" href="#">
+            <img src="../assets/images/logo-instagram.png" alt="ig">
+          </a>
+        </div>
+        <div class="pb-10 pt-6">
+          <ul class="content-page d-flex justify-content-between">
+            <li>
+              <a class="d-flex" href="#">
+                <span class="material-symbols-outlined mr-2">arrow_back</span>
+                <span>上一篇：街頭潮人訪問 1</span>
+              </a>
+            </li>
+            <li>
+              <a class="d-flex" href="#">
+                <span class="mr-2">下一篇：街頭潮人訪問 2</span>
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <%- include('./layout/footer'); -%>
+  <script type="module" src="../main.js"></script>
+</body>
+</html>

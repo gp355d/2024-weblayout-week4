@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <title>門市據點詳細介紹</title>
+</head>
+<body>
+  <%- include('./layout/header'); -%>
+  <section class="location">
+    <div class="container">
+      <h2 class="title font-blod mb-8 mb-xs-6">門市據點</h2>
+      <div class="choseItem d-flex align-items-center mb-10 mb-sm-6" style="flex-wrap: nowrap;">
+        <label for="option" style="white-space: nowrap">選擇地區</label>
+        <select name="setectItem" id="setectItem">
+          <option value="台北中山旗艦店">台北中山旗艦店</option>
+        </select>
+      </div>
+      <div class="locationInto d-flex ">
+        <div class="content">
+          <img src="../assets/images/storepage-1.png" alt="storepage-1">
+          <div class="locationList-content">
+            <h3 class="title">台北中山旗艦店</h3>
+            <ul class="infoList">
+              <li class="d-flex">
+                <span class="d-block material-symbols-outlined mr-2">call</span>
+                <p>電話：(02)000-1234</p>
+              </li>
+              <li class="d-flex">
+                <span class="d-block material-symbols-outlined mr-2">schedule</span>
+                <p>營業時間：10:00-21:00</p>
+              </li>
+              <li class="d-flex">
+                <span class="d-block material-symbols-outlined mr-2">location_on</span>
+                <p>地址：台北市中山區南京東路25巷2-1號</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mapImg">
+          <img src="../assets/images/storemap.png">
+        </div>
+      </div>
+    </div>
+  </section>
+  <%- include('./layout/footer'); -%>
+  <script type="module" src="../main.js"></script>
+</body>
+</html>

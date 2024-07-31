@@ -1,0 +1,276 @@
+.container{
+  max-width: 1320px;
+  margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+@include pad() {
+  .container{
+    max-width: 720px;
+  }
+}
+@include mobile {
+  .container{
+    max-width: 372px;
+  }
+}
+.d-flex{
+  display: flex;
+}
+.d-block{
+  display: block;
+}
+.d-block-in{
+  display: inline-block;
+}
+.d-none{
+  display: none;
+}
+.align-items-center{
+  align-items: center;
+}
+.justify-content-center{
+  justify-content: center;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+.flex-column{
+  flex-direction: column;
+}
+.text-right{
+  text-align: right;
+}
+.text-secondary{
+  color: $secondaryColor ;
+}
+.text-primary{
+  color: $primaryColor;
+}
+.text-color{
+  color: $color;
+}
+.font-blod{
+  font-weight: bold;
+}
+.font-italic{
+  font-style: italic;
+}
+.font-weight-500{
+  font-weight: 500;
+}
+.w-100{
+  width: 100%;
+}
+.h-100{
+  height: 100%;
+}
+.bg-primary{
+  background-color: $primaryColor;
+}
+.bg-secondary{
+  background-color: #FBF2F2;
+}
+.text-center{
+  text-align: center;
+}
+@include pad-small{
+  .w-sm-50{
+    width: 50%;
+  }
+  .w-sm-100{
+    width: 100%;
+  }
+  .flex-sm-wrap{
+    flex-wrap: wrap;
+  }
+  .flex-sm-column{
+    flex-direction: column;
+  }
+  .align-items-sm-start{
+    align-items: flex-start;
+  }
+  .d-sm-block{
+    display: block;
+  }
+  .text-sm-center{
+    text-align: center;
+  }
+  .d-sm-none{
+    display: none;
+  }
+  .border-1 {
+    border: 1px solid $color;
+  }
+  .nav{
+    margin-right: -12px;
+    margin-left: -12px;
+  }
+}
+$spacer: 4px;
+$spacer-types: () !default;
+
+@for $i from 0 through 20 {
+  $spacer-types: map-merge($spacer-types, ($i: $spacer * $i));
+}
+@each $name, $spacer in $spacer-types {
+  .m-#{$name} {
+    margin: $spacer;
+  }
+  .mt-#{$name} {
+    margin-top: $spacer;
+  }
+  .mb-#{$name} {
+    margin-bottom: $spacer;
+  }
+  .ml-#{$name} {
+    margin-left: $spacer;
+  }
+  .mr-#{$name} {
+    margin-right: $spacer;
+  }
+  .p-#{$name} {
+    padding: $spacer;
+  }
+  .pt-#{$name} {
+    padding-top: $spacer;
+  }
+  .pb-#{$name} {
+    padding-bottom: $spacer;
+  }
+  .pl-#{$name} {
+    padding-left: $spacer;
+  }
+  .pr-#{$name} {
+    padding-right: $spacer;
+  }
+}
+.mb-31{
+  margin-bottom: 124px;
+}
+.pt-24{
+  padding-top: 96px;
+}
+@include pad {
+  @each $name, $spacer in $spacer-types {
+    .mt-md-#{$name} {
+      margin-top: $spacer;
+    }
+    .mb-md-#{$name} {
+      margin-bottom: $spacer;
+    }
+    .ml-md-#{$name} {
+      margin-left: $spacer;
+    }
+    .mr-md-#{$name} {
+      margin-right: $spacer;
+    }
+    .pt-md-#{$name} {
+      padding-top: $spacer;
+    }
+    .pb-md-#{$name} {
+      padding-bottom: $spacer;
+    }
+    .pl-md-#{$name} {
+      padding-left: $spacer;
+    }
+    .pr-md-#{$name} {
+      padding-right: $spacer;
+    }
+  }
+}
+@include pad-small {
+  @each $name, $spacer in $spacer-types {
+    .mt-sm-#{$name} {
+      margin-top: $spacer;
+    }
+    .mb-sm-#{$name} {
+      margin-bottom: $spacer;
+    }
+    .ml-sm-#{$name} {
+      margin-left: $spacer;
+    }
+    .mr-sm-#{$name} {
+      margin-right: $spacer;
+    }
+    .pt-sm-#{$name} {
+      padding-top: $spacer;
+    }
+    .pb-sm-#{$name} {
+      padding-bottom: $spacer;
+    }
+    .pl-sm-#{$name} {
+      padding-left: $spacer;
+    }
+    .pr-sm-#{$name} {
+      padding-right: $spacer;
+    }
+  }
+}
+@include mobile {
+  @each $name, $spacer in $spacer-types {
+    .mt-xs-#{$name} {
+      margin-top: $spacer;
+    }
+    .mb-xs-#{$name} {
+      margin-bottom: $spacer;
+    }
+    .ml-xs-#{$name} {
+      margin-left: $spacer;
+    }
+    .mr-xs-#{$name} {
+      margin-right: $spacer;
+    }
+    .pt-xs-#{$name} {
+      padding-top: $spacer;
+    }
+    .pb-xs-#{$name} {
+      padding-bottom: $spacer;
+    }
+    .pl-xs-#{$name} {
+      padding-left: $spacer;
+    }
+    .pr-xs-#{$name} {
+      padding-right: $spacer;
+    }
+  }
+}
+$fontSize-types: (
+  1: 14px,
+  2: 16px,
+  3: 18px,
+  4: 20px,
+  5: 24px,
+  6: 36px,
+  7: 48px,
+  8: 64px
+) !default;
+//18px
+//32px
+
+@each $val, $size in $fontSize-types {
+  .fz-#{$val} {
+    font-size: $size;
+  }
+}
+@include pad {
+  @each $val, $size in $fontSize-types {
+    .fz-md-#{$val} {
+      font-size: $size;
+    }
+  }
+}
+@include pad-small {
+  @each $val, $size in $fontSize-types {
+    .fz-sm-#{$val} {
+      font-size: $size;
+    }
+  }
+}
+@include mobile {
+  @each $val, $size in $fontSize-types {
+    .fz-xs-#{$val} {
+      font-size: $size;
+    }
+  }
+}

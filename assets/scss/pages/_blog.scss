@@ -1,0 +1,135 @@
+//blog.html
+@include pad{
+  .blog > .container{
+   max-width: 100%;
+  }
+}
+.blog{
+  padding-top: 96px;
+  padding-bottom: 80px;
+  @include mobile{
+    padding-top: 40px;
+    padding-bottom: 64px;
+  }
+  .list{
+    @include pad-small{
+      width: 100%;
+      flex-wrap: wrap;;
+    }
+    @include mobile{
+      display: block;
+     }
+    }
+  .title{
+    font-size: 48px;
+    padding-left: 12px;
+    border-left: 8px solid $color3;
+    @include mobile{
+      font-size: 24px;
+    }
+  }
+  .info{
+    justify-content: space-between;
+  }
+  .content{
+    width: 50%;
+    @include pad-small{
+      width: 100%;
+   }
+   h3{
+    font-size: 24px;
+    color: $secondaryColor;
+    font-weight: 500;
+   }
+  }
+  .info{
+    font-size: 20px;
+    margin-bottom: 16px;
+    font-weight: 500;
+    &> span{
+      color: rgba(0, 0, 0, .7);
+     }
+   }
+   @include pad{
+    .info {
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
+   }
+   @include mobile {
+    .info {
+      margin-bottom: 0;
+    }
+   }
+}
+.img{
+ width: 50%;
+ margin-right: 24px;
+  @include pad-small{
+    width: 100%;
+    margin-right: 0;
+  }
+}
+.img img{
+ height: 100%;
+ object-fit: cover;
+}
+.moreLink{
+  display: inline-block;
+  margin-top: auto;
+  text-align: right;
+  color: $secondaryColor;
+  font-size: 36px;
+  font-weight: 900;
+  @include pad{
+   display: none;
+  }
+ }
+ .moreLink-sm{
+  display: none;
+  color: $color5;
+  @include pad{
+    display: inline-block;
+  }
+ }
+ 
+ .dec{
+  font-size: 20px;
+  color: $color5;
+   @include pad{
+   font-size: 16px;
+   }
+   @include mobile{
+     display: none;
+   }
+ }
+ @include pad{
+  .moreContent{
+    display: none;
+  }
+ }
+ .subMenu{
+  background-color: $secondaryColor;
+  ul{
+    margin-right: auto;
+  }
+   a{
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 20px;
+    @include mobile{
+      font-size: 16px;
+    }
+   }
+ }
+ .searchIcon{
+  font-size: 40px;
+  @include mobile{
+    display: none;
+  }
+ }
+.hide{
+  @include mobile{
+    display: none;
+  }
+}
