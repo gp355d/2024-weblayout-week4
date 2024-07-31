@@ -9,12 +9,12 @@
   li{
     width: 33.333%;
     &.active{
-      border-bottom: 8px solid #AA0601;
+      border-bottom: 8px solid $primaryColor;
     }
     a{
       font-size: 32px;
       padding: 24px 0;
-      color: #000;
+      color: $color2;
       padding: 24px 0 16px 0;
       @include pad{
         padding: 16px 0 8px 0;
@@ -107,14 +107,14 @@
 .pg{
   a{
     padding: 12px 16px;
-    color: #555555;
-    outline: 1px solid #000;
+    color: $color5;
+    outline: 1px solid $color2;
     @include pad{
       padding: 12px 15px;
     }
     &:hover{
-      background-color: #000;
-      color: #fff;
+      background-color: $color2;
+      color: $color;
     }
   }
 }

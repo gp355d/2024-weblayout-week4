@@ -23,7 +23,7 @@
   .title{
     font-size: 48px;
     padding-left: 12px;
-    border-left: 8px solid #9F1213;
+    border-left: 8px solid $color3;
     @include mobile{
       font-size: 24px;
     }
@@ -38,7 +38,7 @@
    }
    h3{
     font-size: 24px;
-    color: #650300;
+    color: $secondaryColor;
     font-weight: 500;
    }
   }
@@ -78,7 +78,7 @@
   display: inline-block;
   margin-top: auto;
   text-align: right;
-  color: #650300;
+  color: $secondaryColor;
   font-size: 36px;
   font-weight: 900;
   @include pad{
@@ -87,7 +87,7 @@
  }
  .moreLink-sm{
   display: none;
-  color: #555555;
+  color: $color5;
   @include pad{
     display: inline-block;
   }
@@ -95,7 +95,7 @@
  
  .dec{
   font-size: 20px;
-  color: #555555;
+  color: $color5;
    @include pad{
    font-size: 16px;
    }
@@ -109,12 +109,17 @@
   }
  }
  .subMenu{
-   @include mobile{
-     display: none;
-   }
+  background-color: $secondaryColor;
+  ul{
+    margin-right: auto;
+  }
    a{
     padding-top: 13px;
     padding-bottom: 13px;
+    font-size: 20px;
+    @include mobile{
+      font-size: 16px;
+    }
    }
  }
  .searchIcon{
@@ -123,7 +128,7 @@
     display: none;
   }
  }
-.xx{
+.hide{
   @include mobile{
     display: none;
   }

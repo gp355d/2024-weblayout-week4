@@ -110,7 +110,7 @@
     }
   }
   .title{
-    background-color: #fff;
+    background-color: $color;
     font-size: 48px;
   }
   h3{
@@ -125,6 +125,7 @@
 .customerRecommend{
   h3{
     font-size: 48px;
+    color: $secondaryColor;
     @include pad-small{
       font-size: 24px;
     }
@@ -153,13 +154,15 @@
   border: 1px solid #DEE2E6;
   border-radius: 4px;
   span{
-    margin-top: auto;color: #707070;
+    margin-top: auto;
+    color: $color6;
   }
 }
 //contactMe區塊
 .contactMe{
   h3{
     font-size: 48px;
+    color: $secondaryColor;
     @include pad-small{
       font-size: 24px;
     }
@@ -188,7 +191,7 @@
   input[type="text"],
   & textarea{
     width: 100%;
-    border: 1px solid #000;
+    border: 1px solid $color2;
   }
   & textarea{
     padding: 6px 12px;

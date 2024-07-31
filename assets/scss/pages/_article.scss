@@ -29,7 +29,7 @@
 }
 .breadCrumbs{
   a{
-    color: #000;
+    color: $color2;
     &:after{
       content: "/";
       padding-left: 5px;
@@ -46,9 +46,12 @@
   }
 } 
 .tags{
-  color: $primaryColor;
+  font-size: 24px;
+  @include mobile{
+    font-size: 16px;
+  }
   span{
-    font-size: 14px;
+    color: $primaryColor;
     @include pad-small{
       font-size: 16px;
     }
@@ -115,11 +118,11 @@
   }
 }
 .articleInfo{
-  color: #555555;
+  color: $color5;
 }
 .share {
   width: 66%;
-  border-bottom: 1px solid #707070;
+  border-bottom: 1px solid $color6;
   @include pad{
     width: 100%;
   }
@@ -149,6 +152,6 @@
     margin-right: auto
   }
   a{
-    color: #000;;
+    color: $color2;;
   }
 }
