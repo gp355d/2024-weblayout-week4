@@ -47,6 +47,12 @@
 } 
 .tags{
   color: $primaryColor;
+  span{
+    font-size: 14px;
+    @include pad-small{
+      font-size: 16px;
+    }
+  }
 }
 .article{
   .content{
@@ -58,12 +64,30 @@
       width: 100%;
       margin-right: 0;
     }
+    h2{
+      font-size: 48px;
+      @include pad-small{
+        font-size: 24px;
+      }
+    }
+    h3{
+      font-size: 24px;
+      @include pad-small{
+        font-size: 16px;
+      }
+    }
   }
 }
 .article{
   .relativeTags{
     width: 33.333%;
     color: $primaryColor;
+    .title{
+      font-size: 32px;
+      @include pad{
+        font-size: 16px;
+      }
+    }
     @include pad{
       width: 25%;
     }
